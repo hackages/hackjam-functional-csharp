@@ -1,0 +1,265 @@
+[
+  {
+    "category": "Fibonacci",
+    "tests": [
+      {
+        "title": "Without Memoization",
+        "cases": [
+          { "url": "Fibonacci/WithoutMemoization?n=24", "result": 46368 },
+          { "url": "Fibonacci/WithoutMemoization?n=37", "result": 24157817 },
+          { "url": "Fibonacci/WithoutMemoization?n=0", "result": 0 },
+          { "url": "Fibonacci/WithoutMemoization?n=1", "result": 1 }
+        ]
+      },
+      {
+        "title": "With Memoization",
+        "cases": [
+          { "url": "Fibonacci/WithMemoization?n=24", "result": 46368 },
+          { "url": "Fibonacci/WithMemoization?n=37", "result": 24157817 },
+          { "url": "Fibonacci/WithMemoization?n=0", "result": 0 },
+          { "url": "Fibonacci/WithMemoization?n=1", "result": 1 }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Function",
+    "tests": [
+      {
+        "title": "Reverse",
+        "cases": [
+          {
+            "url": "Function/Reverse?s=Hello World",
+            "result": "dlroW olleH"
+          },
+          {
+            "url": "Function/Reverse?s=Hello   World",
+            "result": "dlroW   olleH"
+          },
+          {
+            "url": "Function/Reverse?s=54321",
+            "result": "12345"
+          },
+          {
+            "url": "Function/Reverse?s=5 4  3 2  1",
+            "result": "1  2 3  4 5"
+          }
+        ]
+      },
+      {
+        "title": "Pascal Case",
+        "cases": [
+          { "url": "Function/PascalCase?s=hello sir", "result": "HelloSir" },
+          { "url": "Function/PascalCase?s=tooltip", "result": "Tooltip" },
+          { "url": "Function/PascalCase?s=heLlo   sir", "result": "HelloSir" },
+          { "url": "Function/PascalCase?s=heLlo SiR", "result": "HelloSir" }
+        ]
+      },
+      {
+        "title": "Camel Case",
+        "cases": [
+          { "url": "Function/CamelCase?s=hello lady", "result": "helloLady" },
+          { "url": "Function/CamelCase?s=toolTip", "result": "tooltip" },
+          {
+            "url": "Function/CamelCase?s=heLlo   lAdY",
+            "result": "helloLady"
+          },
+          { "url": "Function/CamelCase?s=heLlo LadY", "result": "helloLady" }
+        ]
+      },
+      {
+        "title": "Repeat 3 Times",
+        "cases": [
+          {
+            "url": "Function/Repeat3Times?s=Hello World",
+            "result": "HHHeeellllllooo   WWWooorrrlllddd"
+          },
+          {
+            "url": "Function/Repeat3Times?s= Hello World",
+            "result": "   HHHeeellllllooo   WWWooorrrlllddd"
+          },
+          {
+            "url": "Function/Repeat3Times?s=1 1",
+            "result": "111   111"
+          },
+          {
+            "url": "Function/Repeat3Times?s=1 1.",
+            "result": "111   111..."
+          }
+        ]
+      },
+      {
+        "title": "Reverse and Pascal Case",
+        "cases": [
+          {
+            "url": "Function/ReverseAndPascalCase?s=Hello World",
+            "result": "DlrowOlleh"
+          },
+          {
+            "url": "Function/ReverseAndPascalCase?s=HelloWorld",
+            "result": "Dlrowolleh"
+          },
+          {
+            "url": "Function/ReverseAndPascalCase?s=HeLlo World",
+            "result": "DlrowOlleh"
+          },
+          {
+            "url": "Function/ReverseAndPascalCase?s=HellOWorlD",
+            "result": "Dlrowolleh"
+          }
+        ]
+      },
+      {
+        "title": "Reverse and Camel Case",
+        "cases": [
+          {
+            "url": "Function/ReverseAndCamelCase?s=Hello World",
+            "result": "dlrowOlleh"
+          },
+          {
+            "url": "Function/ReverseAndCamelCase?s=HelloWorld",
+            "result": "dlrowolleh"
+          },
+          {
+            "url": "Function/ReverseAndCamelCase?s=HeLlo World",
+            "result": "dlrowOlleh"
+          },
+          {
+            "url": "Function/ReverseAndCamelCase?s=HellOWorlD",
+            "result": "dlrowolleh"
+          }
+        ]
+      },
+      {
+        "title": "Reverse and Repeat 5 Times",
+        "cases": [
+          {
+            "url": "Function/ReverseAndRepeat5Times?s=Hello World",
+            "result": "dddddlllllrrrrroooooWWWWW     ooooolllllllllleeeeeHHHHH"
+          },
+          {
+            "url": "Function/ReverseAndRepeat5Times?s=HelloWorld",
+            "result": "dddddlllllrrrrroooooWWWWWooooolllllllllleeeeeHHHHH"
+          },
+          {
+            "url": "Function/ReverseAndRepeat5Times?s=hElLo1WoRlD",
+            "result": "DDDDDlllllRRRRRoooooWWWWW11111oooooLLLLLlllllEEEEEhhhhh"
+          }
+        ]
+      },
+      {
+        "title":"Get the First Four Characters",
+        "cases": [
+          {
+            "url":"Function/GetTheFirstFourCharacters?s=h llo world",
+            "result":"h ll"
+          }
+        ]
+      },
+      {
+        "title":"Get the First Four Characters then Reverse and Repeat 4 times",
+        "cases": [
+          {
+            "url":"Function/GetTheFirstFourCharactersThenReverseAndRepeat4Times?s=h llo world",
+            "result":"llllllll    hhhh"
+          }
+        ]
+      },
+      {
+        "title":"Add Five",
+        "cases": [
+          {
+            "url":"Function/Add5?n=13",
+            "result":18
+          }
+        ]
+      },
+      {
+        "title":"Add Seven to Each Number",
+        "cases": [
+          {
+            "url":"Function/AddSevenToEachNumber?n[0]=1&n[1]=2&n[2]=3&n[3]=4&n[4]=5",
+            "result":[8,9,10,11,12]
+          }
+        ]
+      },
+      {
+        "title":"Add Three and Multiply by Three Each Number",
+        "cases": [
+          {
+            "url":"Function/AddThreeAndMultiplyByThreeEachNumber?n[0]=1&n[1]=2&n[2]=3&n[3]=4&n[4]=5",
+            "result":[12,15,18,21,24]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Inventory",
+    "tests": [
+      {
+        "title": "Available Shoes Sizes",
+        "cases": [
+          {
+            "url": "Inventory/AvailableShoesSizes",
+            "result": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46]
+          }
+        ]
+      },
+      {
+        "title": "Available Clothes Sizes",
+        "cases": [
+          {
+            "url": "Inventory/AvailableClothesSizes",
+            "result": ["XS", "2XL", "XL", "S", "3XL", "M", "L"]
+          }
+        ]
+      },
+      {
+        "title": "Available Products Sizes",
+        "cases": [
+          {
+            "url": "Inventory/AvailableProducts",
+            "result": [{"validity":"2019-10-28T21:06:33Z","id":4,"name":"Coffee - Almond Amaretto","quantity":68,"unitPrice":5.35},{"validity":"2019-11-20T08:09:13Z","id":7,"name":"Gatorade - Lemon Lime","quantity":93,"unitPrice":96.65},{"validity":"2019-11-15T08:07:09Z","id":50,"name":"Bread - White, Unsliced","quantity":91,"unitPrice":15.11},{"type":"Haute-couture","size":"XS","gender":"M","id":52,"name":"Underwears","quantity":12,"unitPrice":66.77},{"type":"Ready-to-wear","size":"2XL","gender":"F","id":53,"name":"Jeans","quantity":74,"unitPrice":32.3},{"type":"Ready-to-wear","size":"2XL","gender":"M","id":54,"name":"Coat","quantity":58,"unitPrice":76.99},{"type":"Haute-couture","size":"XS","gender":"F","id":56,"name":"Jeans","quantity":85,"unitPrice":9.69},{"type":"Ready-to-wear","size":"XS","gender":"F","id":57,"name":"Skirt","quantity":12,"unitPrice":91.32},{"type":"Haute-couture","size":"XL","gender":"F","id":58,"name":"Skirt","quantity":100,"unitPrice":60.56},{"type":"Haute-couture","size":"S","gender":"F","id":60,"name":"Jacket","quantity":8,"unitPrice":91.37},{"type":"Haute-couture","size":"3XL","gender":"F","id":61,"name":"T-Shirt","quantity":1,"unitPrice":84.15},{"type":"Ready-to-wear","size":"M","gender":"M","id":62,"name":"Jeans","quantity":3,"unitPrice":48.87},{"type":"Ready-to-wear","size":"3XL","gender":"M","id":64,"name":"Jacket","quantity":44,"unitPrice":40.8},{"type":"Ready-to-wear","size":"M","gender":"F","id":65,"name":"Underwears","quantity":55,"unitPrice":67.35},{"type":"Ready-to-wear","size":"3XL","gender":"F","id":66,"name":"T-Shirt","quantity":54,"unitPrice":49.43},{"type":"Ready-to-wear","size":"L","gender":"F","id":67,"name":"Underwears","quantity":12,"unitPrice":81.1},{"type":"Haute-couture","size":"XS","gender":"F","id":68,"name":"Underwears","quantity":45,"unitPrice":72.87},{"type":"Ready-to-wear","size":"S","gender":"F","id":70,"name":"Suit","quantity":66,"unitPrice":64.27},{"type":"Haute-couture","size":"XL","gender":"F","id":71,"name":"Suit","quantity":41,"unitPrice":60.36},{"type":"Ready-to-wear","size":"S","gender":"F","id":72,"name":"Jacket","quantity":80,"unitPrice":50.21},{"type":"Haute-couture","size":"L","gender":"M","id":73,"name":"Jacket","quantity":37,"unitPrice":2.4},{"type":"Ready-to-wear","size":"2XL","gender":"F","id":74,"name":"Dress","quantity":50,"unitPrice":58.65},{"type":"Haute-couture","size":"2XL","gender":"M","id":75,"name":"Suit","quantity":96,"unitPrice":52.99},{"type":"Ready-to-wear","size":"XL","gender":"M","id":76,"name":"Skirt","quantity":5,"unitPrice":8.34},{"type":"Haute-couture","size":"S","gender":"M","id":78,"name":"Underwears","quantity":37,"unitPrice":44.52},{"type":"Haute-couture","size":"2XL","gender":"F","id":80,"name":"Shirt","quantity":47,"unitPrice":2.21},{"type":"Ready-to-wear","size":"M","gender":"F","id":81,"name":"Suit","quantity":77,"unitPrice":19.13},{"type":"Haute-couture","size":"M","gender":"M","id":82,"name":"Coat","quantity":100,"unitPrice":59.7},{"type":"Ready-to-wear","size":"M","gender":"F","id":83,"name":"Jacket","quantity":95,"unitPrice":14.16},{"type":"Haute-couture","size":"3XL","gender":"F","id":84,"name":"T-Shirt","quantity":20,"unitPrice":52.27},{"type":"Ready-to-wear","size":"L","gender":"F","id":85,"name":"Shirt","quantity":10,"unitPrice":40.94},{"type":"Ready-to-wear","size":"2XL","gender":"M","id":86,"name":"Skirt","quantity":17,"unitPrice":2.48},{"type":"Ready-to-wear","size":"M","gender":"F","id":88,"name":"Dress","quantity":42,"unitPrice":27.93},{"type":"Haute-couture","size":"M","gender":"M","id":90,"name":"Jacket","quantity":45,"unitPrice":78.99},{"type":"Ready-to-wear","size":"XL","gender":"M","id":91,"name":"Socks","quantity":34,"unitPrice":82.83},{"type":"Ready-to-wear","size":"L","gender":"F","id":92,"name":"Suit","quantity":26,"unitPrice":3.5},{"type":"Haute-couture","size":"XS","gender":"F","id":93,"name":"Skirt","quantity":9,"unitPrice":69.88},{"type":"Ready-to-wear","size":"L","gender":"M","id":94,"name":"Suit","quantity":88,"unitPrice":88.18},{"type":"Ready-to-wear","size":"3XL","gender":"F","id":95,"name":"Jacket","quantity":12,"unitPrice":25.02},{"type":"Haute-couture","size":"M","gender":"F","id":96,"name":"Underwears","quantity":70,"unitPrice":75.82},{"type":"Ready-to-wear","size":"S","gender":"M","id":97,"name":"Underwears","quantity":4,"unitPrice":22.29},{"type":"Haute-couture","size":"XS","gender":"F","id":98,"name":"Suit","quantity":51,"unitPrice":1.5},{"type":"Ready-to-wear","size":"M","gender":"F","id":99,"name":"Dress","quantity":68,"unitPrice":30.39},{"color":"Blue","size":44,"id":101,"name":"Nike","quantity":4,"unitPrice":85.29},{"color":"Yellow","size":39,"id":102,"name":"Adidas","quantity":18,"unitPrice":52.96},{"color":"Red","size":39,"id":103,"name":"Converse","quantity":56,"unitPrice":7.36},{"color":"Teal","size":42,"id":104,"name":"Timbaland","quantity":99,"unitPrice":61.74},{"color":"Green","size":40,"id":105,"name":"Lacoste","quantity":12,"unitPrice":87.47},{"color":"Fuscia","size":36,"id":106,"name":"Puma","quantity":4,"unitPrice":84.19},{"color":"Goldenrod","size":46,"id":107,"name":"Reebok","quantity":63,"unitPrice":17.89},{"color":"Turquoise","size":46,"id":108,"name":"Vans","quantity":5,"unitPrice":37.22},{"color":"Yellow","size":42,"id":109,"name":"New Balance","quantity":53,"unitPrice":28.3},{"color":"Yellow","size":45,"id":110,"name":"Fred Perry","quantity":85,"unitPrice":51.98},{"color":"Fuscia","size":38,"id":111,"name":"Nike","quantity":100,"unitPrice":36.89},{"color":"Pink","size":40,"id":112,"name":"Adidas","quantity":33,"unitPrice":29.59},{"color":"Khaki","size":37,"id":113,"name":"Converse","quantity":6,"unitPrice":24.95},{"color":"Aquamarine","size":43,"id":114,"name":"Timbaland","quantity":96,"unitPrice":42.71},{"color":"Fuscia","size":37,"id":115,"name":"Lacoste","quantity":99,"unitPrice":8.49},{"color":"Red","size":41,"id":116,"name":"Puma","quantity":16,"unitPrice":10.0},{"color":"Fuscia","size":36,"id":117,"name":"Reebok","quantity":90,"unitPrice":62.71},{"color":"Crimson","size":44,"id":118,"name":"Vans","quantity":23,"unitPrice":75.3},{"color":"Khaki","size":40,"id":119,"name":"New Balance","quantity":88,"unitPrice":11.97},{"color":"Pink","size":41,"id":120,"name":"Fred Perry","quantity":85,"unitPrice":75.55},{"color":"Puce","size":45,"id":121,"name":"Nike","quantity":56,"unitPrice":26.99},{"color":"Khaki","size":42,"id":122,"name":"Adidas","quantity":93,"unitPrice":15.42},{"color":"Orange","size":40,"id":123,"name":"Converse","quantity":15,"unitPrice":87.63},{"color":"Teal","size":46,"id":124,"name":"Timbaland","quantity":49,"unitPrice":74.38},{"color":"Maroon","size":39,"id":125,"name":"Lacoste","quantity":99,"unitPrice":88.51},{"color":"Green","size":36,"id":126,"name":"Puma","quantity":54,"unitPrice":28.73},{"color":"Maroon","size":43,"id":127,"name":"Reebok","quantity":72,"unitPrice":92.97},{"color":"Goldenrod","size":36,"id":128,"name":"Vans","quantity":52,"unitPrice":19.77},{"color":"Blue","size":45,"id":129,"name":"New Balance","quantity":20,"unitPrice":16.79},{"color":"Orange","size":40,"id":130,"name":"Fred Perry","quantity":47,"unitPrice":58.59},{"color":"Mauv","size":42,"id":131,"name":"Nike","quantity":75,"unitPrice":63.36},{"color":"Yellow","size":40,"id":132,"name":"Adidas","quantity":84,"unitPrice":56.79},{"color":"Pink","size":38,"id":133,"name":"Converse","quantity":49,"unitPrice":97.41},{"color":"Blue","size":36,"id":134,"name":"Timbaland","quantity":94,"unitPrice":72.88},{"color":"Pink","size":39,"id":135,"name":"Lacoste","quantity":98,"unitPrice":97.91},{"color":"Puce","size":44,"id":136,"name":"Puma","quantity":41,"unitPrice":89.82},{"color":"Crimson","size":41,"id":137,"name":"Reebok","quantity":61,"unitPrice":42.56},{"color":"Orange","size":38,"id":138,"name":"Vans","quantity":84,"unitPrice":26.44},{"color":"Orange","size":38,"id":139,"name":"New Balance","quantity":78,"unitPrice":80.22},{"color":"Crimson","size":42,"id":140,"name":"Fred Perry","quantity":29,"unitPrice":89.97},{"color":"Yellow","size":38,"id":141,"name":"Nike","quantity":32,"unitPrice":78.73},{"color":"Red","size":45,"id":142,"name":"Adidas","quantity":88,"unitPrice":29.55},{"color":"Aquamarine","size":36,"id":143,"name":"Converse","quantity":43,"unitPrice":44.03},{"color":"Indigo","size":42,"id":144,"name":"Timbaland","quantity":1,"unitPrice":15.04},{"color":"Puce","size":41,"id":145,"name":"Lacoste","quantity":47,"unitPrice":97.47},{"color":"Teal","size":45,"id":146,"name":"Puma","quantity":33,"unitPrice":97.56},{"color":"Turquoise","size":46,"id":147,"name":"Reebok","quantity":19,"unitPrice":44.59},{"color":"Yellow","size":44,"id":148,"name":"Vans","quantity":100,"unitPrice":32.16},{"color":"Maroon","size":46,"id":149,"name":"New Balance","quantity":11,"unitPrice":70.52},{"color":"Maroon","size":43,"id":150,"name":"Fred Perry","quantity":48,"unitPrice":68.07}]
+          }
+        ]
+      },
+      {
+        "title": "Total Price per Product Type",
+        "cases": [
+          {
+            "url": "Inventory/Prices",
+            "result": [{"type":"Perishable","sum":2252.4900000000007},{"type":"Shoes","sum":2697.42},{"type":"Clothes","sum":2421.36}]
+          }
+        ]
+      },
+      {
+        "title": "Name and Quantity per Product",
+        "cases": [
+          {
+            "url": "Inventory/Quantity?productIds=1,2,3,4",
+            "result": [{"name":"Wild Boar - Tenderloin","quantity":90},{"name":"Wine - Red, Harrow Estates, Cab","quantity":32},{"name":"Uniform Linen Charge","quantity":100},{"name":"Coffee - Almond Amaretto","quantity":68}]
+          }
+        ]
+      },
+      {
+        "title": "Order Price",
+        "cases": [
+          {
+            "url": "Inventory/Order?productIds=1,2,3,4&quantities=12,34,54,65",
+            "result": 4921.61
+          }
+        ]
+      },
+      {
+        "title": "Discount",
+        "cases": [
+          {
+            "url": "Inventory/Discount?productIds=3,4,17,67",
+            "result": [{"id":3,"name":"Uniform Linen Charge","discount":50},{"id":4,"name":"Coffee - Almond Amaretto","discount":5},{"id":17,"name":"Sugar - Sweet N Low, Individual","discount":50},{"id":67,"name":"Underwears","discount":5}]
+          }
+        ]
+      }
+    ]
+  }
+]
