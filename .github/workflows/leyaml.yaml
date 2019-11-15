@@ -1,6 +1,6 @@
-name: platform-api-check
+name: jon
 
-on: [pull_request]
+on: [push]
 
 jobs:
   install:
